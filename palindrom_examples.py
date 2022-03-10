@@ -30,3 +30,5 @@ with open (filename) as fp:
             with open(non_palindrome_file,"a") as non_palindrome_fp:
                 non_palindrome_fp.write(f"{orig_line}\n")
 
+                print(klk)
+
