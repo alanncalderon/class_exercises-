@@ -16,6 +16,7 @@ def save_locally():
 punctuation = ",;.!-()?"
 def get_unique_words():
     unique_words = {}
+    # word_count= 0
     with open(local_name) as fp:
         for line in fp:
             #remove punctuation
@@ -25,8 +26,9 @@ def get_unique_words():
             #get the words:
             for word in line.split():
                 unique_words [word] = unique_words.get(word, 0) + 1
+                # word_count += 1
 
-    return unique_words
+    return unique_words #, word_count
 
 # save_locally()
 unique_words = get_unique_words()
